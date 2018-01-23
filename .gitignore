@@ -1,0 +1,4 @@
+weather_download_config.py
+*.csv
+__pycache__
+
