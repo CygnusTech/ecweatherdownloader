@@ -4,9 +4,9 @@ Script to read and process CSV files from Environment Canada.
 
 ## Setup
 
-Copy the weather_download_config_example.py file to weather_download_config.py.
+Copy the ecweatherdownloader_config_example.py file to ecweatherdownloader_config.py.
 
-Edit the weather_download_config.py file as required.
+Edit the ecweatherdownloader_config.py file as required.
 
 ## Usage
 

@@ -43,7 +43,7 @@
 #  used, that the output timezone still gets modified from the environment 
 #  canada data; in particular the appropriate timezone is added.
 
-class WeatherDownloaderConfig:
+class ECWeatherDownloaderConfig:
   sites = [
     {'site':41883, 'filename':'{year:04d}-{month:02d}-Inuvik-EnvironmentCanada.csv', 'timezone':'Etc/GMT+7', 'outtimezone':'UTC'},
     {'site':48168, 'filename':'{year:04d}-{month:02d}-Whitehorse-EnvironmentCanada.csv', 'timezone':'Etc/GMT+8'},

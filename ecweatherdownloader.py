@@ -24,7 +24,7 @@ import shutil
 import csv
 import pytz
 
-from weather_download_config import WeatherDownloaderConfig
+from ecweatherdownloader_config import ECWeatherDownloaderConfig
 
 def weatherOfficeDataGet(filename, stationId, stationTimezone, outputTimezone, year, month, day):
   #URL uses GET and is http://climate.weather.gc.ca/climateData/bulkdata_e.html?format=csv&stationID=41883&Year=2014&Month=11&Day=11&timeframe=1&submit=Download+Data
@@ -108,7 +108,7 @@ if __name__ == "__main__":
   # month, just to ensure we still get the tail end of it.
   # The corrolary is that the script needs to be run at least once a week.
   
-  for siteconfig in WeatherDownloaderConfig.sites:
+  for siteconfig in ECWeatherDownloaderConfig.sites:
     site = siteconfig['site']
     filename = siteconfig['filename']
     localTimezone = pytz.timezone(siteconfig['timezone'])
