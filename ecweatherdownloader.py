@@ -56,7 +56,7 @@ def weatherOfficeDataGet(filename, stationId, stationTimezone, outputTimezone, y
       
       for row in csvreader:
         try:
-          ts = datetime.datetime.strptime(row[0], "%Y-%m-%d %H:%M")
+          ts = datetime.datetime.strptime(row[4], "%Y-%m-%d %H:%M")
         except:
           ts = None
         if ts is None:
